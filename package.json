@@ -1,0 +1,20 @@
+{
+  "name": "pdf-report-generator",
+  "version": "1.0.0",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start:server": "node server.js",
+    "start:worker": "node Controllers/worker.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.1115.0",
+    "@aws-sdk/s3-request-presigner": "^3.1115.0",
+    "bullmq": "^6.2.0",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "ioredis": "^6.0.0",
+    "pdf-lib": "^1.17.1",
+    "puppeteer": "^25.8.0"
+  }
+}
